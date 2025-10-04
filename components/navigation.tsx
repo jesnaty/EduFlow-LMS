@@ -10,8 +10,14 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-primary-foreground" />
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center relative">
+                {/* Book/Document Icon matching favicon */}
+                <div className="w-4 h-4 border-2 border-white rounded-sm relative">
+                  <div className="absolute top-1 left-0.5 w-3 h-0.5 bg-white"></div>
+                  <div className="absolute top-2 left-0.5 w-2.5 h-0.5 bg-white"></div>
+                  <div className="absolute top-3 left-0.5 w-2 h-0.5 bg-white"></div>
+                </div>
+                <div className="absolute -top-1 -right-1 w-1.5 h-1.5 bg-white rounded-full"></div>
               </div>
               <span className="text-xl font-bold text-foreground">EduFlow</span>
             </Link>

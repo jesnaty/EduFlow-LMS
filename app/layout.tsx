@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   description:
     "Professional E-Learning platform built with Vue.js architecture, TypeScript, and modern web technologies",
   generator: "EduFlow LMS",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
